@@ -1,0 +1,57 @@
+/* 레이아웃 */
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  height: 10vh;
+  background-color: #784c98;
+  color: #ffb4ab;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  position: sticky;
+  font-family: 'Sunflower', sans-serif;
+}
+
+header>h1 main {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main>section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  display: inline-block;
+  width: 100%;
+  margin: 1vh;
+  width: 50vw;
+  height: 20vw;
+  max-width: 200px;
+  max-height: 50px;
+  border-radius: 12px;
+  border: none;
+  text-align: center;
+  background-color: #6c998f;
+  color: yellow;
+  font-size: 2rem;
+  font-family: 'Nanum Brush Script', cursive;
+}
+
+button:hover,
+button:active {
+  background-color: black;
+  color: red;
+  text-decoration: underline;
+  font-style: italic;
+}
