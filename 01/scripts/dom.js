@@ -20,9 +20,9 @@ function show() {
 //}
 
 // es6+ 부터 함수는 화살표 함수로 만들기
-const show = () => {
+const show1 = () => {
   //1. 태그만들기
-  let tag = "";
+  let tag1 = "";
   /*
   for(let i=1; i <= 6; i++) { 
     //tag = tag + '<div class="divMsg">' + i + '</div>' ;
@@ -32,29 +32,41 @@ const show = () => {
   */
 
   let i = Math.floor(Math.random() * 6) + 1;
-  tag = `<div class="divMsg"><img src="./images/${i}.png" id="msgImg"></div>`
-  console.log(tag);
+  tag1 = `<div class="divMsg"><img src="./image/${i}.png" id="msgImg"></div>`
+  console.log(tag1);
 
   //2.DOM에서 태그를 넣을 요소 선택
-  const msgDiv = document.querySelector('#msg');
+  const dice = document.querySelector('#msg');
 
 
   //3.선택된 요소의 HTML 변경
-  msgDiv.innerHTML = tag;
+  dice.innerHTML = tag1;
 
   //4.동적으로 생성된 HTML요소도 스타일 변경 가능
   let msgImg = document.querySelector('#msgImg')
   msgImg.style.maxWidth = "100px";
   msgImg.style.maxheight = "100px";
 
-  //폼 보이기
+  //폼 숨기기
   const formSection = document.querySelector('#formSection');
-  formSection.style.display = "block";
+  formSection.style.display = "none";
+
+}
+
+const show2 = () => {
+
+  let tag2
+
+  const confirm = document.querySelector('.bt2');
+  confirm.style.display = "none";
+
+  document.getElementById(".bt2").addEventListener('click');
+
 }
 
 //DOM 요소가 생성된 후에 실행
 document.addEventListener("DOMContentLoaded", () => {
-  //폼 숨기기
+  //폼 보이기
   const formSection = document.querySelector('#formSection');
-  formSection.style.display = "none";
+  formSection.style.display = "block";
 });

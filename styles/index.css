@@ -53,3 +53,12 @@ button:active {
   text-decoration: underline;
   font-style: italic;
 }
+
+/* #formSection {
+  width: 30px;
+  height: 10px;
+  border: solid 1px black;
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+} */
